@@ -14,11 +14,11 @@ def get_int(prompt):
 
 while True:
     number = random.randint(1, 100)
-    count = 0
+    COUNT = 0
 
     while True:
         guess = get_int("What is your guess? ")
-        count += 1
+        COUNT += 1
         if guess == number:
             print("You guessed it!")
             break
@@ -26,7 +26,7 @@ while True:
             print("Lower.")
         else:
             print("Higher.")
-    print(f"It took you {count} guesses.")
+    print(f"It took you {COUNT} guesses.")
     play_again = input("Do you want to play again? (yes/no) ").lower()
     if play_again != "yes":
         print("\nThank you for playing. Goodbye")
